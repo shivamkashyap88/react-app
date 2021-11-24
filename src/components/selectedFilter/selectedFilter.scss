@@ -1,0 +1,14 @@
+.selected-filter-list {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    span {
+        padding: 0.5rem;
+        background-color: #90734b;
+        margin: 0.2rem;
+        em {
+            cursor: pointer;
+        }
+    }
+}

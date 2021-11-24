@@ -1,0 +1,22 @@
+.card {
+    position: relative;
+    background-color: #333333;
+    height: 100%;
+  }
+  .image-card {
+    position: relative;
+  }
+
+  .character-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #00000094;
+  }
+  .character-title{
+    padding: 0.5rem;
+  h5 {
+    font-size: large;
+  }
+  }

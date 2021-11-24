@@ -1,0 +1,23 @@
+.card-description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .card-item {
+    display: flex;
+    justify-content: space-between;
+    flex: 1rem;
+    padding: 1rem;
+    span {
+      flex: 0 ;
+    }
+  }
+
+.character-value { 
+    color: #90734b;
+  }
+  .character-key {
+  color: #5f5f5f;
+  }
+  

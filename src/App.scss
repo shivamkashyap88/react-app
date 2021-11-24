@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.parent-card {
+ flex: 1 0 75%;
+}
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 17rem;
+  height: 15rem;
+}
+.card-width {
+  padding: 0.5rem;
+  flex: 0;
+}
+
+.search-name {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
