@@ -13,7 +13,7 @@ function SelectedFilter({ filters, removeFromFilter }) {
             <div className="selected-filter-list">
                 {
                     Object.keys(filters).map((key) => {
-                        return filters[key].map((val) => {
+                        return typeof(filters[key])=== 'object' && filters[key].map((val) => {
                             return (
                                 <span>{val}&nbsp;<em onClick={() => handleEvent(key, val)}>&#x2717;</em></span>
                             )

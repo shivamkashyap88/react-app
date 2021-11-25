@@ -7,8 +7,10 @@ export const initialState = {
     filters: {
         species: [],
         gender: [],
-        origin: []
-    }
+        origin: [],
+        sort: ''
+    },
+    filteredArray: []
 };
 
 export const store = createStore(characterReducer, applyMiddleware(thunk));

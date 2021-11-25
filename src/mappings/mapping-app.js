@@ -1,14 +1,19 @@
-import { addCharacters, addToStateFilter, removeToStateFilter } from "../store/action"
+import { addCharacters, addCharactersToSorted, addToStateFilter, removeToStateFilter } from "../store/action"
 
 export const mapStateToProps = (state) =>
 ({
     characters: state.characters,
-    filters: state.filters
+    filters: state.filters,
+    filteredArray: state.filteredArray
 })
 
 export const mapDispatchToProps = (dispatch) => (
     {
-        init: () => dispatch(addCharacters())
+        init: () => dispatch(addCharacters()),
+        addFilteredCharacter: (val) => dispatch(addCharactersToSorted(val)),
+        changeFilter: (value) => {
+            dispatch(addToStateFilter(value))
+        },
     }
 )
 
